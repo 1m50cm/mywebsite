@@ -1,0 +1,157 @@
+body{
+  background-image: url(background27.png);
+  font-size: 20px;
+  font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  }
+
+.table{
+  margin-left: auto;
+  margin-right: auto;
+  empty-cells: show ;
+  width: 85%;
+  border: peru;
+  border-width:10px;
+}
+
+td{
+background-color: #ffffff;
+border-right: 1px dashed  black; ;
+}
+
+th{
+color: white;
+background-color: peru;
+border-right: 1px dashed  black; ;
+}
+
+.design {
+  display: inline-block; /* Строчно-блочный элемент */
+  padding: 5px 20px; /* Добавляем поля */
+  text-decoration: none; /* Убираем подчёркивание у ссылки */
+  cursor: pointer; /* Курсор в виде руки */
+  background: #deefff; /* Фон для браузеров, не поддерживающих градиент */
+  /* Градиент */
+  background: -moz-linear-gradient(top, peru 0%, peru 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,peru), color-stop(100%,peru));
+  background: -webkit-linear-gradient(top, peru 0%,orange 100%);
+  background: -o-linear-gradient(top, peru 0%,orange 100%);
+  background: -ms-linear-gradient(top, peru 0%,orange 100%);
+  background: linear-gradient(top, peru 0%,orange 100%);
+  border-radius: 10px; /* Скругляем уголки */
+  border: 1px solid orange; /* Добавляем синюю рамку */
+  font: 12px/1 Arial, sans-serif; /* Рубленый шрифт */
+  color: white;} /* Цвет текста и ссылки */
+
+ /* #outer_container{margin:60px auto; width:600px; padding:0 10px; background:#000; border:1px solid #999;}
+  #thumbScroller{position:relative; margin:auto;}
+  #thumbScroller{width:600px;}
+  #thumbScroller, #thumbScroller .container, #thumbScroller .content{height:170px;}
+  #thumbScroller{overflow:hidden;}
+  #thumbScroller .container{position:relative; left:0;}
+  #thumbScroller .content{width:260px; float:left;}
+  #thumbScroller .content div{padding:10px 15px; height:100%; font-family:Verdana, Geneva, sans-serif; font-size:13px;}
+  #thumbScroller img{border:5px solid #fff;}*/
+
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.leftimg {
+  float:left; /* Выравнивание по левому краю */
+  margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+ }
+ .rightimg  {
+  float: right; /* Выравнивание по правому краю  */ 
+  margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+ }
